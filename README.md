@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+<h1 align="center">OLX<h1/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Virtual-Market
 
-## Available Scripts
 
-In the project directory, you can run:
+## Table of contents
 
-### `yarn start`
+- [Introduction](#introduction)
+- [Demo](#demo)
+- [Run](#run)
+- [Technology](#technology)
+- [Features](#features)
+- [Database Models](#database)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Introduction
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+A virtual market website using React and Firebase.
 
-### `yarn test`
+NOTE: Please read the RUN section before opening an issue.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demo
 
-### `yarn build`
+<p align="center">
+<img src="https://imgur.com/qQ5XWf2.jpg"/>
+<img src="https://imgur.com/207BRe5.jpg"/>
+<img src="https://imgur.com/WcJSECF.jpg"/>
+<img src="https://imgur.com/5nmuQWV.jpg"/>
+<img src="https://imgur.com/imWsn0a.jpg"/>
+<img src="https://imgur.com/C98EiNd.jpg"/>
+<img src="https://imgur.com/r5h3ixj.jpg"/>
+<img src="https://imgur.com/PwDGSu6.jpg"/>
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The website resembles a real marketplace and you can sell or buy products from this platform.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Run
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- FIREBASE_URI: this is the connection string of your Firebase database.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Now you can run "npm start" in the terminal and the application should work.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Technology
 
-## Learn More
+The application is built with:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React version 17.0.2
+- Firebase version 8.4.3
+- Webpack version 4.42.0
+- Bootstrap version 4.4.1
+- FontAwesome version 5.13.0
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application displays a virtual marketplace that contains virtual products and contact information.
 
-### Analyzing the Bundle Size
+Users can do the following:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Create an account, login or logout
+- Browse available products added by the sellers
+- Add products to the platform, a user must be logged in
+- Display the product
+- The product contains contact information of the seller
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Database
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+All the models can be found in the models directory created using firebase.
 
-### Deployment
+### User:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- username (String)
+- password (String)
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Product:
+
+- title (String)
+- imagePath (String)
+- description (String)
+- price (Number)
+- category (ObjectId - a reference to the category)
+- createdAt (Date)
+
+
+  
+### Create Ad:
+  
+- user (User must be logged in)
+- title (Title of the product)
+- image (Image of the product)
+- description (Discription of the product)
+- price (Price of the product)
+- category (Category of the product)
+  
+
+### Buy:
+
+- product (ObjectId - a reference to the product)
+- contact (The product contains contact information of the seller)
+
+  
+
+[Alan Chriss Antony](https://github.com/alanchrissantony)
