@@ -11,6 +11,7 @@
 - [Technology](#technology)
 - [Features](#features)
 - [Database Models](#database)
+- [Customize Project](#customize)
 
 ## Introduction
 
@@ -102,7 +103,10 @@ All the models can be found in the models directory created using firebase.
 
 - product (ObjectId - a reference to the product)
 - contact (The product contains contact information of the seller)
-
   
+  
+## Database
+
+You can use or customize this project by changing firebaseConfig on `src/Firebase/config.js`.  
 
 [Alan Chriss Antony](https://github.com/alanchrissantony)
