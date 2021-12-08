@@ -32,7 +32,7 @@ NOTE: Please read the RUN section before opening an issue.
 </p>
 
 
-The website resembles a real marketplace and you can sell or buy products from this platform.
+The website resembles a real marketplace and you can sell or buy products.
 
 
 ## Run
