@@ -105,7 +105,7 @@ All the models can be found in the models directory created using firebase.
 - contact (The product contains contact information of the seller)
   
   
-## Database
+## Customize
 
 You can use or customize this project by changing `firebaseConfig` on `src/Firebase/config.js`.  
 
