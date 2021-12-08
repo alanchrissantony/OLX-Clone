@@ -107,6 +107,6 @@ All the models can be found in the models directory created using firebase.
   
 ## Database
 
-You can use or customize this project by changing firebaseConfig on `src/Firebase/config.js`.  
+You can use or customize this project by changing `firebaseConfig` on `src/Firebase/config.js`.  
 
 [Alan Chriss Antony](https://github.com/alanchrissantony)
