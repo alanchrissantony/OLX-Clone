@@ -56,7 +56,7 @@ The application is built with:
 
 ## Features
 
-The application displays a virtual marketplace that contains virtual products and contact information.
+The application displays a virtual marketplace that contains products and contact information.
 
 Users can do the following:
 
