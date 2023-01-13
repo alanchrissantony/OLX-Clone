@@ -109,4 +109,4 @@ All the models can be found in the models directory created using firebase.
 
 You can use or customize this project by changing `firebaseConfig` on `src/Firebase/config.js`.  
 
-[Alan Chriss Antony](https://github.com/alanchrissantony)
+[Alan Chris Antony](https://github.com/alanchrissantony)
